@@ -18,30 +18,8 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int i = 5, j = 5;
-    vector<vector<int>> v(i, vector<int>(j));
-
-    vector<int> vec(i, 10);
-    for (int i = 0; i < v.size(); i++)
-    {
-        cout << vec[i] << " ";
-    }
-    cout << endl;
-
-    foi(0, 5)
-    {
-        for (int j = 0; j < v[i].size(); j++)
-        {
-            cout << v[i][j] << " ";
-        }
-        cout << endl;
-    }
-    int arr[5] = {36, 34, 33, 32, 21};
-    int *p;
-    p = arr;
-    foi(0, 5)
-    {
-        cout << *(p + i) << " ";
-    }
+    string s = "sriansu";
+    cout << string::npos << endl;
+    cout << s.find("x");
     return 0;
 }

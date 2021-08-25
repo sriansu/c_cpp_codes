@@ -12,7 +12,7 @@ int swaps(vector<int> &v)
         else
         {
             int temp = v[2 * i];
-         auto it = std::find(v.begin(),v.end(),temp));
+         auto it = std::find(v.begin(),v.end(),temp);
         }
     }
     return count;
