@@ -15,11 +15,18 @@ using namespace std;
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    string s = "sriansu";
-    cout << string::npos << endl;
-    cout << s.find("x");
-    return 0;
+     ios_base::sync_with_stdio(false);
+     cin.tie(NULL);
+     cout.tie(NULL);
+     string s = "sriansu";
+     cout << string::npos << endl;
+     cout << s.find("x");
+     vector<vector<int>> v = {{1, 2}, {2, 4}};
+     cout << "\n"
+          << sqrt(v.size());
+     string str = "07:05:45PM";
+     int hh = stoi(s.substr(0, 1));
+     cout << "\n"
+          << hh;
+     return 0;
 }
