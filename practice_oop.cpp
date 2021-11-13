@@ -142,7 +142,7 @@ int main()
     //sde s1= sde(params);
     sde s1("Aman", "Random", 20, "CPP");
     s1.fix();
-    s1.askforp();
+    s1.askforp();                                      
 
     teacher t1("Tapan", "BIT", 90, "JABA");
     t1.lesson();
