@@ -12,6 +12,7 @@
 #define max(a, b) a > b ? a : b
 #define min(a, b) a < b ? a : b
 using namespace std;
+
 ll modPow(int x, int m, int d) {
 
     if(m == 0) return 1; 
@@ -23,12 +24,15 @@ ll modPow(int x, int m, int d) {
     return m % 2 ? (p * x) % d : p;
 }
 
- long long Nth_term(long long a, long long r, long long n){
+ long long Nth_term(long long a, long long r, long long n)
+ 
+ {
+     
    	    // Code here
     long long ans= ((a)*(long long)(modPow(r,n-1,MOD)));  
    	     
    	    return ans%MOD;
-   	}    
+}    
 
 int main()
 {
