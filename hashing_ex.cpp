@@ -24,6 +24,12 @@ void countFreq(vector<int> arr, int n)
     // count frequencies
     for (int i = 0; i < n; i++)
         mp[arr[i]]++;
+    cout << mp.size() << endl;
+    for (auto it : mp)
+    {
+        cout << it.first << " ";
+    }
+    cout << endl;
 
     // Traverse through map and print frequencies
     for (auto x : mp)

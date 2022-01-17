@@ -92,9 +92,9 @@ int main()
     cin >> n;
     seive_of_eratosthenes(n);
     cout << endl;
-    manipulated_seive(n);
-    for (int i = 0; i < prime.size() && prime[i] <= n; i++)
-        cout << prime[i] << " ";
+    // manipulated_seive(n);
+    // for (int i = 0; i < prime.size() && prime[i] <= n; i++)
+    //     cout << prime[i] << " ";
 
     return 0;
 }
