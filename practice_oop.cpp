@@ -19,7 +19,7 @@ class abs_emp
     virtual void askforp() = 0;
 };
 
-class Employee : abs_emp //inheritance, emp inherits from abs_emp
+class Employee : abs_emp // inheritance, emp inherits from abs_emp
 {
 private:
     string company;
@@ -67,7 +67,7 @@ public:
 
     void askforp()
     {
-        //some logic
+        // some logic
 
         if (age > 30)
             cout << name << " got promoted" << endl;
@@ -100,7 +100,7 @@ public:
     }
     void fix()
     {
-        cout << name << " fixed " << getcomp() << "'s bug using " << lang << endl; //could use name and didn't need to use getname cuz it was protected and not private
+        cout << name << " fixed " << getcomp() << "'s bug using " << lang << endl; // could use name and didn't need to use getname cuz it was protected and not private
     }
     void work()
     {
@@ -132,26 +132,26 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    // Employee e1("Aman", "Random", 20);
+    // Employee d1("Aman", "Random", 20);
 
     // e1.emp_intro();
     // e1.setname("Sri");
     // cout << e1.getname() << endl;
     // e1.askforp();
 
-    //sde s1= sde(params);
+    // sde s1= sde(params);
     sde s1("Aman", "Random", 20, "CPP");
     s1.fix();
-    s1.askforp();                                      
+    s1.askforp();
 
     teacher t1("Tapan", "BIT", 90, "JABA");
     t1.lesson();
     t1.askforp();
-    //polymorphism uses- when a parent class reference is used to refer a child class object.
-    Employee *e1 = &s1; //a pointer of base class holds reference to derived class obj
+    // polymorphism uses- when a parent class reference is used to refer a child class object.
+    Employee *e1 = &s1; // a pointer of base class holds reference to derived class obj
     Employee *e2 = &t1;
 
-    e1->work(); //this works cuz employee class work method is virtual
+    e1->work(); // this works cuz employee class work method is virtual
     e2->work();
     return 0;
 }

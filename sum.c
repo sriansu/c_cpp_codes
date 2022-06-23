@@ -1,12 +1,9 @@
-#include<stdio.h>
-
-
-
+#include <stdio.h>
 
 void main()
 {
-   int a,b;
-   scanf("%d",&a);
-   scanf("%d",&b);
-   printf("%d",a+b);
+   int num;
+   int *p = &num;
+   for (*p = 10; p; (*p)--)
+      printf("%d", *p);
 }
